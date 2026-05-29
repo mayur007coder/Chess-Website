@@ -65,7 +65,7 @@ const pageContent = {
       "For questions, suggestions, or website issues, contact the owner through the GitHub project.",
     paragraphs: [
       "GitHub: https://github.com/mayur007coder/Chess-Website",
-      "Add a public email address here before applying for AdSense.",
+      "mayurdhongders@gmail.com",
     ],
   },
 };
