@@ -44,9 +44,16 @@ app.innerHTML = `
       <span class="engine-dot" id="engine-dot"></span>
       <span id="engine-state">Stockfish loading</span>
     </div>
+    <nav class="site-nav" aria-label="Site pages">
+      <a href="#play">Play</a>
+      <a href="#learn">Learn</a>
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main class="arena">
+  <main id="play" class="arena">
     <section class="board-column" aria-label="Chess match">
       <div class="player-rail" id="top-player"></div>
       <div class="board-frame">
@@ -120,6 +127,63 @@ app.innerHTML = `
       </section>
     </aside>
   </main>
+
+  <section id="learn" class="content-band" aria-labelledby="learn-title">
+    <div class="content-wrap">
+      <span class="eyebrow">Chess Training</span>
+      <h2 id="learn-title">Improve One Move At A Time</h2>
+      <div class="learning-grid">
+        <article>
+          <h3>Opening Principles</h3>
+          <p>Control the center, develop minor pieces early, castle before the position opens, and avoid moving the same piece repeatedly without a clear reason.</p>
+        </article>
+        <article>
+          <h3>Tactical Checklist</h3>
+          <p>Before every move, scan for checks, captures, threats, loose pieces, back-rank weaknesses, pins, forks, and discovered attacks.</p>
+        </article>
+        <article>
+          <h3>Endgame Basics</h3>
+          <p>Activate your king, push passed pawns, place rooks behind passed pawns, and trade pieces when ahead in material.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="content-band muted-band" aria-labelledby="about-title">
+    <div class="content-wrap split-content">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2 id="about-title">Grandmaster Arena</h2>
+      </div>
+      <p>Grandmaster Arena is a browser chess website built for quick games, practice, and casual learning. You can play against Stockfish, play over the board with a friend, review moves, and use the training notes to build stronger chess habits.</p>
+    </div>
+  </section>
+
+  <section id="privacy" class="content-band" aria-labelledby="privacy-title">
+    <div class="content-wrap policy-copy">
+      <span class="eyebrow">Privacy Policy</span>
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <p>Grandmaster Arena does not require an account to play chess and does not ask visitors to submit personal information inside the game.</p>
+      <p>If advertising, analytics, or embedded third-party services are added later, those services may use cookies or similar technologies according to their own policies. Visitors can control cookies through their browser settings.</p>
+      <p>This website may collect basic technical information through hosting logs, such as browser type, device type, approximate region, pages visited, and error information. This information is used to keep the website reliable and improve the experience.</p>
+      <p>Last updated: May 29, 2026.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="content-band muted-band" aria-labelledby="contact-title">
+    <div class="content-wrap split-content">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-title">Contact The Site Owner</h2>
+      </div>
+      <p>For questions, suggestions, or website issues, contact the owner through the GitHub project at <a href="https://github.com/mayur007coder/Chess-Website" target="_blank" rel="noreferrer">mayur007coder/Chess-Website</a>. Add a public email address here before applying for AdSense.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>Grandmaster Arena</span>
+    <span>Play chess online and keep improving.</span>
+  </footer>
 `;
 
 const game = new Chess();
@@ -136,6 +200,7 @@ const state = {
 };
 
 const elements = {
+  navLinks: document.querySelectorAll(".site-nav a"),
   aiMode: document.querySelector("#ai-mode"),
   friendMode: document.querySelector("#friend-mode"),
   aiOptions: document.querySelector("#ai-options"),
@@ -165,6 +230,12 @@ const elements = {
   engineDot: document.querySelector("#engine-dot"),
   engineState: document.querySelector("#engine-state"),
 };
+
+elements.navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    elements.navLinks.forEach((item) => item.classList.toggle("active", item === link));
+  });
+});
 
 const board = new Chessboard(document.querySelector("#board"), {
   position: game.fen(),
