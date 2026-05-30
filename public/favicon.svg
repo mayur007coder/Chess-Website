@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Grandmaster Arena icon">
+  <rect width="64" height="64" rx="10" fill="#171411"/>
+  <path fill="#d49d4e" d="M29 8h6v7h7v6h-7v6h-6v-6h-7v-6h7V8Z"/>
+  <path fill="#f3eee8" d="M22 56h20l-3-7H25l-3 7Zm4-11h12l2-19H24l2 19Zm-5-23h22l-3 6H24l-3-6Z"/>
+  <path fill="#8b5a2b" d="M20 58h24v4H20v-4Z"/>
+</svg>
