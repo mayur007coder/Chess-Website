@@ -29,6 +29,16 @@ const pageContent = {
         text:
           "After a game, find the first move where your plan changed. Ask what your opponent threatened, what you missed, and which candidate move was safer.",
       },
+      {
+        title: "Blunder Check",
+        text:
+          "Before releasing a piece, ask whether your king is safe, whether your queen or rook is hanging, and whether your opponent has a forcing reply.",
+      },
+      {
+        title: "Simple Plans",
+        text:
+          "When no tactic is available, improve your worst piece, claim an open file, create a passed pawn, or trade into an endgame where your king is more active.",
+      },
     ],
   },
   about: {
@@ -41,6 +51,7 @@ const pageContent = {
     paragraphs: [
       "You can play against Stockfish, play over the board with a friend, review moves, and use training notes to build stronger chess habits.",
       "The site is designed to be simple, fast, and useful on both desktop and mobile devices.",
+      "The project focuses on original interactive chess tools, clear navigation, and practical learning pages that support the main playing experience.",
     ],
   },
   privacy: {
@@ -51,9 +62,11 @@ const pageContent = {
     intro:
       "Grandmaster Arena does not require an account to play chess and does not ask visitors to submit personal information inside the game.",
     paragraphs: [
-      "If advertising, analytics, or embedded third-party services are added later, those services may use cookies or similar technologies according to their own policies. Visitors can control cookies through their browser settings.",
+      "This website may use Google AdSense or other advertising services. These services may use cookies, web beacons, device information, IP addresses, and similar technologies to show and measure ads according to their own policies.",
+      "Visitors can control cookies through their browser settings. Some browser settings or extensions may limit advertising or measurement features.",
       "This website may collect basic technical information through hosting logs, such as browser type, device type, approximate region, pages visited, and error information. This information is used to keep the website reliable and improve the experience.",
-      "Last updated: May 29, 2026.",
+      "Grandmaster Arena does not sell user accounts or require visitors to create an account before playing chess.",
+      "Last updated: May 31, 2026.",
     ],
   },
   contact: {
@@ -62,10 +75,11 @@ const pageContent = {
     eyebrow: "Contact",
     heading: "Contact The Site Owner",
     intro:
-      "For questions, suggestions, or website issues, contact the owner through the GitHub project.",
+      "For questions, suggestions, chess feature ideas, or website issues, contact the owner through the GitHub project or email.",
     paragraphs: [
       "GitHub: https://github.com/mayur007coder/Chess-Website",
       "mayurdhongders@gmail.com",
+      "Helpful reports include your browser, device type, the page you were using, and what happened before the issue appeared.",
     ],
   },
 };

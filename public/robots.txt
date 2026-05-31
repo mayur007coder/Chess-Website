@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chess-website-m64.pages.dev/sitemap.xml
