@@ -687,6 +687,17 @@ input[type="range"] {
   margin-top: 16px;
 }
 
+.lesson-copy {
+  margin-top: 42px;
+}
+
+.lesson-copy h3 {
+  margin: 0 0 14px;
+  color: #f0e6dc;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+}
+
 .page-grid {
   margin-top: 8px;
   grid-template-columns: repeat(2, 1fr);
@@ -761,6 +772,10 @@ input[type="range"] {
 
 .policy-copy p + p {
   margin-top: 14px;
+}
+
+.policy-copy strong {
+  color: #eee4d9;
 }
 
 .content-band a {

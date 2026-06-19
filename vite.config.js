@@ -10,6 +10,7 @@ export default defineConfig({
         about: resolve(__dirname, "about.html"),
         privacy: resolve(__dirname, "privacy.html"),
         contact: resolve(__dirname, "contact.html"),
+        notFound: resolve(__dirname, "404.html"),
       },
     },
   },

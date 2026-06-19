@@ -39,6 +39,21 @@ const pageContent = {
         text:
           "When no tactic is available, improve your worst piece, claim an open file, create a passed pawn, or trade into an endgame where your king is more active.",
       },
+      {
+        title: "Candidate Moves",
+        text:
+          "List at least two sensible choices before calculating. Begin with forcing moves, but include one quiet move that improves your position or prevents the opponent's plan.",
+      },
+      {
+        title: "Pawn Structure",
+        text:
+          "Use pawn breaks to open lines for your pieces, not simply to gain space. Before pushing, check which squares become weak and whether the pawn can still be defended.",
+      },
+      {
+        title: "Time Management",
+        text:
+          "Spend extra time when the position changes: after a surprising move, a central pawn break, a major exchange, or the appearance of a direct threat to either king.",
+      },
     ],
   },
   about: {
@@ -139,6 +154,12 @@ function renderPageBody(page) {
             `,
           )
           .join("")}
+      </section>
+      <section class="page-copy lesson-copy" aria-labelledby="study-method-title">
+        <h3 id="study-method-title">A Simple Study Method</h3>
+        <p>Play one complete game at a time and avoid restarting after an early mistake. Finishing the position gives you experience defending worse games, converting advantages, and recognizing endgame patterns.</p>
+        <p>During review, divide the game into opening, middlegame, and endgame. For each phase, identify one decision you understood and one decision you would change. Keep the lesson specific: develop before attacking, calculate the recapture, or activate the king before pushing pawns.</p>
+        <p>Return to the same lesson in your next game. Improvement becomes visible when a useful idea changes a decision at the board, not when a long list of advice is merely remembered.</p>
       </section>
     `;
   }

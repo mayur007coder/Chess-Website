@@ -128,6 +128,44 @@ app.innerHTML = `
     </aside>
   </main>
 
+  <section class="content-band" aria-labelledby="play-guide-title">
+    <div class="content-wrap">
+      <span class="eyebrow">Practical Guide</span>
+      <h2 id="play-guide-title">How To Get More From Every Game</h2>
+      <div class="learning-grid">
+        <article>
+          <h3>Choose A Useful Difficulty</h3>
+          <p>Start at a level where you can finish a game without losing material immediately. Move up when you regularly reach playable middlegames. A useful opponent should punish obvious mistakes while still giving you enough time to practice plans, tactics, and endgames.</p>
+        </article>
+        <article>
+          <h3>Use A Move Routine</h3>
+          <p>Before each move, check your opponent's threats, then inspect every check, capture, and forcing move for both sides. Finally compare two or three candidate moves. This short routine catches loose pieces and one-move tactics more reliably than moving on instinct alone.</p>
+        </article>
+        <article>
+          <h3>Review Without An Engine First</h3>
+          <p>After the game, replay the moves and mark the first position where you felt unsure. Write down what you expected and what actually happened. Only then compare alternatives. Finding the reason behind one mistake is more valuable than collecting a long list of computer evaluations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-band muted-band" aria-labelledby="position-guide-title">
+    <div class="content-wrap">
+      <span class="eyebrow">Position Checklist</span>
+      <h2 id="position-guide-title">What To Think About On Your Turn</h2>
+      <div class="split-content">
+        <div class="policy-copy">
+          <p><strong>King safety comes first.</strong> Notice open files, weak diagonals, missing pawn cover, and pieces that can join an attack with tempo. If the center is about to open, an uncastled king can quickly become the most important feature of the position.</p>
+          <p><strong>Count attackers and defenders.</strong> A piece may look protected but still be tactically vulnerable when its defender is pinned, overloaded, or needed elsewhere. Recount after every exchange because the balance can change with a single forcing move.</p>
+        </div>
+        <div class="policy-copy">
+          <p><strong>Improve the least useful piece.</strong> When there is no immediate tactic, find the piece with no active job. Give it a better square, connect the rooks, contest an open file, or create an entry point before launching a pawn move that cannot be taken back.</p>
+          <p><strong>Plan for the next phase.</strong> Trades can lead to a favorable endgame, remove an important defender, or release pressure for your opponent. Before exchanging, picture the resulting pawn structure and decide whose king and remaining pieces will be more active.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <span>Grandmaster Arena</span>
     <span>Play chess online and keep improving.</span>
